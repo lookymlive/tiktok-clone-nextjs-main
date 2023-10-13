@@ -79,14 +79,13 @@ export default function Comments({ params }: CommentsCompTypes) {
         <div
           className={`
             bg-[#F1F1F2] flex items-center rounded-lg w-full lg:max-w-[420px]
-            ${
-              inputFocused
-                ? "border-2 border-gray-400"
-                : "border-2 border-[#F1F1F2]"
+            ${inputFocused
+              ? "border-2 border-gray-400"
+              : "border-2 border-[#F1F1F2]"
             }
           `}
         >
-          {/* Usamos un input para capturar el texto del comentario y cambiar el estado local con la función setComment */}
+          // Usamos un input para capturar el texto del comentario y cambiar el estado local con la función setComment.
           <input
             onFocus={() => setInputFocused(true)}
             onBlur={() => setInputFocused(false)}

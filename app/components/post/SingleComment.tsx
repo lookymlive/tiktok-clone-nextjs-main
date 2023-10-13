@@ -41,10 +41,10 @@ export default function SingleComment({
         id="SingleComment"
         className="flex items-center justify-between px-8 mt-4"
       >
-        {/* Renderiza un contenedor con ID "SingleComment" y aplica estilos CSS. */}
+        // Renderiza un contenedor con ID "SingleComment" y aplica estilos CSS.
         <div className="flex items-center relative w-full">
           <Link href={`/profile/${comment.profile.user_id}`}>
-            {/* Crea un enlace al perfil del usuario que hizo el comentario. */}
+            // Crea un enlace al perfil del usuario que hizo el comentario.
             <img
               className="absolute top-0 rounded-full lg:mx-0 mx-auto"
               width="40"
@@ -52,9 +52,9 @@ export default function SingleComment({
             />
           </Link>
           <div className="ml-14 pt-0.5 w-full">
-            {/* Renderiza el contenido del comentario y aplica estilos. */}
+            // Renderiza el contenido del comentario y aplica estilos.
             <div className="text-[18px] font-semibold flex items-center justify-between">
-              {/* Muestra el nombre del autor y la fecha del comentario. */}
+              // Muestra el nombre del autor y la fecha del comentario.
               <span className="flex items-center">
                 {comment?.profile?.name} -
                 <span className="text-[12px] text-gray-600 font-light ml-1">
@@ -63,7 +63,7 @@ export default function SingleComment({
                 </span>
               </span>
 
-              {/* Si el usuario actual es el autor, muestra un botón de eliminación. */}
+              // Si el usuario actual es el autor, muestra un botón de eliminación.
               {contextUser?.user?.id == comment.profile.user_id ? (
                 <button
                   disabled={isDeleting}

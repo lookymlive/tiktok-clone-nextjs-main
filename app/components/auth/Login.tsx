@@ -98,11 +98,10 @@ export default function Login() {
             onClick={() => login()}
             className={`
                             flex items-center justify-center w-full text-[17px] font-semibold text-white py-3 rounded-sm
-                            ${
-                              !email || !password
-                                ? "bg-gray-200"
-                                : "bg-[#F02C56]"
-                            }
+                            ${!email || !password
+                ? "bg-gray-200"
+                : "bg-[#2c77f0]"
+              }
                         `}
           >
             {loading ? (
@@ -112,7 +111,7 @@ export default function Login() {
                 size={25}
               />
             ) : (
-              "Log in"
+              "Login"
             )}
           </button>
         </div>
