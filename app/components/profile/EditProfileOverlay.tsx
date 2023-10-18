@@ -159,9 +159,8 @@ export default function EditProfileOverlay() {
           </div>
 
           <div
-            className={`h-[calc(500px-200px)] ${
-              !uploadedImage ? "mt-16" : "mt-[58px]"
-            }`}
+            className={`h-[calc(500px-200px)] ${!uploadedImage ? "mt-16" : "mt-[58px]"
+              }`}
           >
             {!uploadedImage ? (
               <div>
@@ -222,9 +221,8 @@ export default function EditProfileOverlay() {
 
                       {/* Mensaje informativo sobre los requisitos del nombre de usuario */}
                       <p
-                        className={`relative text-[11px] text-gray-500 ${
-                          error ? "mt-1" : "mt-4"
-                        }`}
+                        className={`relative text-[11px] text-gray-500 ${error ? "mt-1" : "mt-4"
+                          }`}
                       >
                         Usernames can only contain letters, numbers,
                         underscores, and periods. Changing your username will
@@ -234,7 +232,7 @@ export default function EditProfileOverlay() {
                   </div>
                 </div>
 
-                {/* Sección para la biografía del usuario */}
+                // Sección para la biografía del usuario.
                 <div
                   id="UserBioSection"
                   className="flex flex-col sm:h-[120px]  px-1.5 py-2 mt-2 w-full"
@@ -245,7 +243,7 @@ export default function EditProfileOverlay() {
 
                   <div className="flex items-center justify-center sm:-mt-6">
                     <div className="sm:w-[60%] w-full max-w-md">
-                      {/* Área de texto para editar la biografía del usuario */}
+                      // Área de texto para editar la biografía del usuario.
                       <textarea
                         cols={30}
                         rows={4}
